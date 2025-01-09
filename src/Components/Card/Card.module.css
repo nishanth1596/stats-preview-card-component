@@ -1,0 +1,129 @@
+:root {
+  --white: #fff;
+  --ab5cdb: #ab5cdb;
+  --c-0a0c1c: #0a0c1c;
+  --c-1b1937: #1b1937;
+
+  --ff-inter: "Inter", serif;
+  --ff-lexendDeca: "Lexend Deca", serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 20.435rem;
+  background-color: var(--c-1b1937);
+  text-align: center;
+}
+
+.img {
+  content: "";
+  width: 100%;
+  content: url("../../assets/image-header-mobile.jpg");
+  background-color: var(--ab5cdb);
+  background-size: cover;
+}
+/* 
+.textbox {
+  padding-top: 2.5rem;
+  text-align: center;
+} */
+
+.heading {
+  margin-top: 2.5rem;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+.blockSpan {
+  display: block;
+}
+
+.coloredSpan {
+  color: var(--ab5cdb);
+}
+
+.info {
+  margin-top: 1rem;
+  margin-left: 1.9375rem;
+  margin-right: 2rem;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  opacity: 0.75;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.liElements {
+  list-style-type: none;
+}
+
+.liElements p {
+  font-family: var(--ff-lexendDeca);
+  opacity: 0.6;
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.liElements span {
+  display: block;
+  opacity: 1;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+}
+
+@media (min-width: 70rem) {
+  .container {
+    flex-direction: row-reverse;
+    max-width: 69.375rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  .img {
+    content: url("../../assets/image-header-desktop.jpg");
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin-top: 4.4375rem;
+    text-align: left;
+    margin-left: 4.5rem;
+  }
+
+  .blockSpan {
+    display: inline;
+  }
+
+  .info {
+    margin-top: 1.5625rem;
+    margin-left: 4.46875rem;
+    margin-right: 7.78125rem;
+    text-align: left;
+  }
+
+  .lists {
+    flex-direction: row;
+    margin-top: 4.5rem;
+    margin-left: 4.46875rem;
+    gap: 3.9375rem;
+  }
+
+  .liElements:last-child {
+    margin-left: -0.1875rem;
+  }
+}
