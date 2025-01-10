@@ -5,11 +5,13 @@ import heroImgMobile from "../../assets/image-header-mobile.jpg";
 function Card() {
   return (
     <article className={styles.container}>
-      <img
-        className={styles.img}
-        src={heroImgMobile}
-        alt="Three women in an office desk, two of them areworking and the other is smiling at looking at her right side"
-      />
+      <div className={styles.imgParent}>
+        <img
+          className={styles.img}
+          src={heroImgMobile}
+          alt="Three women in an office desk, two of them areworking and the other is smiling at looking at her right side"
+        />
+      </div>
 
       <div className={styles.textBox}>
         <h1 className={styles.heading}>
@@ -25,20 +27,17 @@ function Card() {
         <ul className={styles.lists}>
           <li className={styles.liElements}>
             <p>
-              <span>10k+</span>
-              companies
+              10k+ <span>companies</span>
             </p>
           </li>
           <li className={styles.liElements}>
             <p>
-              <span>314</span>
-              templates
+              314 <span>templates</span>
             </p>
           </li>
           <li className={styles.liElements}>
             <p>
-              <span>12m+</span>
-              queries
+              12m+ <span>queries</span>
             </p>
           </li>
         </ul>
